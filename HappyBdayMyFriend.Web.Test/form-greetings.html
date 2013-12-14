@@ -52,7 +52,7 @@
 		<!-- Preloader -->
 		<div id="preloader">
 			<div id="status">
-				<img src="images/theme-pics/loader.gif" alt=""/><h1 class="noSubtitle">Welcome home</h1>
+                <img src="images/theme-pics/loader.gif" alt="" /><h1 class="noSubtitle">Happy Birthday!</h1>
 			</div>
 		</div>
 		<!-- Preloader -->
@@ -60,28 +60,6 @@
 		================================================== -->
 		<!-- globalWrapper -->
 		<div id="globalWrapper" class="localscroll">
-			<!-- header -->
-			<header id="mainHeader" class="navbar-fixed-top" role="banner">
-				<div class="container">
-					<nav class="navbar navbar-default scrollMenu" role="navigation">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-							<a class="navbar-brand" href="index-fullscreen.html"><img src="images/main-logo.png" alt="Ashley website template"/></a> </div>
-							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
-								<ul class="nav navbar-nav pull-right">
-									<li class="active"><a href="#homeFullScreen"><i class="icon-home-outline"></i>Home</a> </li>
-									<li><a href="#about"><i class="icon-star"></i>About</a> </li>
-									<li><a href="#services"><i class="icon-thumbs-up"></i>Services</a> </li>
-									<li><a href="#works"><i class="icon-popup-1"></i>Works</a> </li>
-									<li><a href="#team"><i class="icon-users"></i>Team</a> </li>
-									<li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>
-								</ul>
-							</div>
-
-						</nav>
-					</div>
-				</header>
-				<!-- header -->
 				<!-- content -->
 
             <section class="slice"  id="contactSlice" >
@@ -89,53 +67,38 @@
 							<div class="row">
 
 								<div class="col-sm-12">
-									<h1 class="noSubtitle">Contact us</h1>
+									<h1 class="noSubtitle">Создай свою открытку</h1>
 								</div>
 								
 								<div class="col-sm-4">
-									<h4>Address:</h4>
-									<address>
-										Himalaya Company<br/>
-										77 Mass. Ave., E14/E15<br/>
-										Cambridge, MA 02139-4307 USA <br/>
-									</address>
-									<h4>Phone:</h4>
-									<address>
-										615.987.1234<br/>
-									</address>
+									<div>
+                                        <label>Выбери обложку</label>
+                                    </div>
+                                    <div class="cover">
+                                        <img src="images/cards/card-001.jpg" />
+                                    </div>
 								</div>
-								<form method="post" action="http://ashley-bootstrap3-website-template.little-neko.com/main/files/js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
+								<form method="post" role="form">
 
-									<div class="col-sm-4"> 
-										<div class="form-group">
-											<label for="name">Name</label>
-											<input type="text" class="form-control" name="name" id="name" placeholder="Enter name"  title="Please enter your name (at least 2 characters)"/>
-										</div>
-										<div class="form-group">
-											<label for="email">Email</label>
-											<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address"/>
-										</div>
-										<div class="form-group">
-											<label for="phone">Phone</label>
-											<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter email phone" title="Please enter a valid phone number (at least 10 characters)">
-										</div>
+									<div class="col-sm-4">
+                                        <div>
+                                            <label>Внутренняя сторона</label>
+                                        </div>
+                                        <div class="cardOpened">
+                                        </div>
 									</div>
 									<div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="signature">Подпишись</label>
+                                            <input class="form-control" name="signature" id="signature" placeholder="Твое имя" title="Не вредничай, подпишись" />
+                                        </div>
 										<div class="form-group">
-											<label for="comments">Comments</label>
-											<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+											<label for="comments">Поздравление</label>
+											<textarea name="comment" class="form-control" id="comments" cols="3" rows="12" placeholder="Текст поздравления…" title="Введи поздравление. Как же без него."></textarea>
 										</div>
-										<fieldset class="clearfix securityCheck">
-											<legend>Security</legend>
-											<div class="form-group">
-												<img src="js-plugin/neko-contact-ajax-plugin/php/image.html" alt="Image verification" id="verifyImg"/>
-												<input class="required form-control" id="verify" name="verify" type="text" >
-											</div>
-										</fieldset>
-									</div>                        
-									<div class="col-md-8 col-md-offset-4">
-										<div class="result"></div>
-										<button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+                                        <div class="cardMake">
+                                            <button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+                                        </div>
 									</div>
 								</form>
 							</div>
