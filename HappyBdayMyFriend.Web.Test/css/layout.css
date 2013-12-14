@@ -193,9 +193,7 @@ h1 {
 	font-weight: 300;
 	font-style: normal;
 	text-align:center;
-	text-transform:uppercase;
 	position:relative;
-	letter-spacing: 0.1em;
 	margin-bottom: 17px;
 }
 
@@ -390,7 +388,7 @@ hr {
 @media(min-width:1200px){}
 
 /*** END MEDIA QUERIES ***/
-#flexHome h1{font}
+#countdown h1{font}
 
 /* END TYPOGRAPHY
 ================================================== */
@@ -609,7 +607,7 @@ body#fullScreen #mainHeader{display:none;}
 #mapWrapper{ height:350px; }
 
 #homeFullScreen {
-	background-image: url('../images/theme-pics/winter.jpg');
+	background-image: url('../images/theme-pics/winter_6.jpg');
 	/*background-image: url('../images/theme-pics/paralax-1.jpg');*/
 	height:100%;
 	display:table;
@@ -619,7 +617,8 @@ body#fullScreen #mainHeader{display:none;}
 
 #fullScreenSliderWrapper{
 	display:table-cell;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
+    padding-top: 15%;
 	width:100%;
 	text-align:center;
 	margin:auto;
@@ -627,16 +626,11 @@ body#fullScreen #mainHeader{display:none;}
 .btn.homeBtn {position:relative; background:rgba(255,255,255,0.25);}
 
 #logoBig img{width:300px; margin:auto; position: relative}
-#homeFullScreen #flexHome {margin: 0;}
-#homeFullScreen #flexHome h1, #homeFullScreen #flexHome .flex-control-nav{text-align: center; margin-bottom: 44px;}
+#homeFullScreen #countdown {margin: 0;}
+#homeFullScreen #countdown h1, #homeFullScreen #countdown .flex-control-nav{text-align: center; margin-bottom: 44px;}
 #homeFullScreen .flexslider .slides > li{height:80px;}
 
 /*** MEDIA QUERIES ***/
-
-@media(max-width:767px){
-	#homeFullScreen #flexHome h1 {font-size:22px;}
-	#logoBig {padding:0 11px;}
-}
 
 @media(min-width:768px){
 	#home {padding-top:70px;}
@@ -678,29 +672,29 @@ footer{padding:44px 0;}
 /* SLIDERS
 ================================================== */
 /*** flex ***/
-#flexHome {
+#countdown {
 	background: transparent;
 	margin-top:0;
 }
-#flexHome .flex-control-nav	{
+#countdown .flex-control-nav	{
 text-align:left;
 margin-bottom:-44px;
 
 }
-#flexHome h1 {
+#countdown h1 {
 	margin-bottom: 11px;
-	font-weight: 300;
+	font-weight: 600;
 	font-size: 32px;
 	line-height:1em;
-	text-transform:uppercase;
 	padding:0;
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+	text-shadow: 2px 2px 0 black;
 	width:100%;
 	text-align:left;
 	display: inline-block;
+    font-family: 'Lobster', cursive;
 }
-#flexHome h1:after  {content:''}
-#flexHome h2 {text-align:left; display: inline-block;}
+#countdown h1:after  {content:''}
+#countdown h2 {text-align:left; display: inline-block;}
 .flexslider .slides > li {height:110px;}
 
 .flex-control-nav{position:static; margin-top:22px;}
@@ -729,13 +723,18 @@ margin-bottom:-44px;
 @media(max-width:400px){
 	.flexslider .slides > li {height:120px;}
 	#homeFullScreen .flexslider .slides > li{height:60px;}
-	#flexHome h2 {font-size: 12px;}
+	#countdown h2 {font-size: 12px;}
+}
+
+@media(max-width:767px){
+	#homeFullScreen #countdown h1 {font-size:56px;}
+	#logoBig {padding:0 11px;}
 }
 
 @media(min-width:768px){
 	.newsText{margin-bottom: 0;}
-	#flexHome h1 {font-size:40px;}
-	#flexHome {
+	#countdown h1 {font-size:76px;}
+	#countdown {
 	margin-top:44px;
 	}
 	.flex-control-nav{display:block;}
@@ -743,8 +742,8 @@ margin-bottom:-44px;
 	#homeFullScreen .flexslider .slides > li{height:80px;}
 }
 @media(min-width:992px){
-	#flexHome h1 {font-size: 50px;}
-	#flexHome {
+	#countdown h1 {font-size: 100px;}
+	#countdown {
 	margin-top:66px;
 	}
 	.flexslider .slides > li {height:200px;}
@@ -752,10 +751,8 @@ margin-bottom:-44px;
 }
 
 @media(min-width:1200px){
-	#flexHome h1 {font-size: 80px;}
-	#flexHome {
-		margin-top:88px;
-		}
+	#countdown h1 {font-size: 160px;}
+	#countdown { margin-top:88px; }
 	.flexslider .slides > li {height:250px;}
 }
 }

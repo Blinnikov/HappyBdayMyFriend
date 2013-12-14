@@ -80,7 +80,7 @@ h2.subTitle:after, h1.noSubtitle:after{
 	background-image: url('../images/theme-pics/paralax-4.jpg');
 }
 #paralaxSlice5 {
-	background-image:  url('../images/theme-pics/winter.jpg');
+	background-image:  url('../images/theme-pics/winter_6.jpg');
 }
 .paralaxText blockquote, .paralaxText h1, .paralaxText h2, .paralaxText h3, .paralaxText p, .paralaxText i{
 	color:#fff;
@@ -247,10 +247,18 @@ p.credits a {
 }
 
 /*** flexHome ***/
-#flexHome  h1 {	color:#fff;
+.countdownHeader {
+    color:#fff;
+	background:none;
+	line-height:1em;
+	padding:0;
+	text-shadow: 2px 2px 0 black;
+}
+
+#countdown  h1 {	color:#fff;
 	background:none;
 	}
-#flexHome  h2 {	color:#fff;
+#countdown  h2 {	color:#fff;
 	background:none;
 }
 

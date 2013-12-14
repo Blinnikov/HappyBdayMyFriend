@@ -122,6 +122,15 @@
     <Content Include="images\theme-pics\paralax-sea-green-3.jpg" />
     <Content Include="images\theme-pics\services.png" />
     <Content Include="images\theme-pics\winter.jpg" />
+    <Content Include="images\theme-pics\winter_1.jpg" />
+    <Content Include="images\theme-pics\winter_2.jpg" />
+    <Content Include="images\theme-pics\winter_3.jpg" />
+    <Content Include="images\theme-pics\winter_4.jpg" />
+    <Content Include="images\theme-pics\winter_5.jpg" />
+    <Content Include="images\theme-pics\winter_6.jpg" />
+    <Content Include="images\theme-pics\winter_7.jpg" />
+    <Content Include="form-greetings.html" />
+    <Content Include="index-greetings.html" />
     <Content Include="index-fullscreen.html" />
     <Content Include="js-plugin\animation-framework\animate.css" />
     <Content Include="js-plugin\easing\jquery.easing.1.3.js" />
