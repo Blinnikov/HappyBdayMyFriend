@@ -1,8 +1,4 @@
-﻿@{
-    var bd = new DateTime(2013, 12, 31);
-    var now = DateTime.Now;
-    var seconds = (int)(bd - now).TotalSeconds;
-}
+﻿@model int
 @section scripts{
 <script type="text/javascript" src="~/JS/ViewModels/HomePageViewModel.js"></script>
     <script type="text/javascript" src="~/JS/Bindings/Timer.js"></script>
@@ -18,9 +14,9 @@
             <div class="paralaxMask"></div>
             <div id="fullScreenSliderWrapper">
                 <div id="countdown">
-                    <h1 data-bind="timer: @seconds"></h1>
+                    <h1 data-bind="timer: { seconds: @Model, ready: flag }"></h1>
                 </div>
-                <a href="@Url.Action("Add", "Greetings")" class="homeBtn btn"><i class="icon-down"></i>Поздравить</a>
+                <a href="@Url.Action("Add", "Greetings")" data-bind="visible: flag" class="homeBtn btn"><i class="icon-down"></i>Поздравить</a>
             </div>
         </div>
     </section>

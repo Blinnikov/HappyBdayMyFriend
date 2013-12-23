@@ -160,6 +160,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\GreetingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -291,9 +292,11 @@
     <Content Include="Static\font-icons\custom-icons\font\custom-iconsc15a.ttf" />
     <Content Include="Static\font-icons\custom-icons\font\custom-iconsc15a.woff" />
     <Content Include="Views\Greetings\Add.cshtml" />
-    <Content Include="Views\Greetings\View.cshtml" />
+    <Content Include="Views\Greetings\Show.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Base\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

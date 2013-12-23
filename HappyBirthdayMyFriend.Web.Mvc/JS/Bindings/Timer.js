@@ -1,7 +1,9 @@
 ﻿ko.bindingHandlers.timer = {
 
     update: function (element, valueAccessor) {
-        var seconds = valueAccessor();
+        var val = valueAccessor();
+        var seconds = val.seconds;
+        var ready = val.ready;
         var formatTime = function (seconds) {
             var result = "";
             // get the days between now and then    
@@ -29,6 +31,8 @@
         var timer = setInterval(function () {
             $(element).text(formatTime(--seconds));
             if (seconds == 0) {
+                $(element).text('Buon Compleanno!');
+                ready(true);
                 clearInterval(timer);
             }
         }, 1000);

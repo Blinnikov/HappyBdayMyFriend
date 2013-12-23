@@ -2,7 +2,7 @@
     'use strict';
 
     function HomePageViewModel() {
-        this.countdownTime = ko.observable('14д 17ч 29м 43с');
+        this.flag = ko.observable(false);
     }
 
     HomePageViewModel.prototype = {

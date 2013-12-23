@@ -6,11 +6,13 @@ using System.Web.Mvc;
 
 namespace HappyBirthdayMyFriend.Web.Mvc.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
-            return View();
+            var seconds = GetSecondsRemain();
+            var model = seconds > 0 ? seconds : 3;
+            return View(model);
         }
     }
 }

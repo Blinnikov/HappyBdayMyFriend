@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace HappyBirthdayMyFriend.Web.Mvc.Controllers
 {
-    public class GreetingsController : Controller
+    public class GreetingsController : BaseController
     {
         public ActionResult Add()
         {
@@ -15,6 +15,11 @@ namespace HappyBirthdayMyFriend.Web.Mvc.Controllers
 
         public ActionResult Show()
         {
+            var seconds = GetSecondsRemain();
+            if (seconds > 0)
+            {
+                return this.RedirectToAction("Index", "Home");
+            }
             return View();
         }
 	}
