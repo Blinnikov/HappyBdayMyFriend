@@ -1,0 +1,30 @@
+﻿@{
+    var bd = new DateTime(2013, 12, 31);
+    var now = DateTime.Now;
+    var seconds = (int)(bd - now).TotalSeconds;
+}
+@section scripts{
+<script type="text/javascript" src="~/JS/ViewModels/HomePageViewModel.js"></script>
+    <script type="text/javascript" src="~/JS/Bindings/Timer.js"></script>
+}
+
+<!-- Primary Page Layout
+================================================== -->
+<!-- globalWrapper -->
+<div id="globalWrapper" class="localscroll">
+    <!-- content -->
+    <section id="homeFullScreen" data-stellar-background-ratio="0.5">
+        <div class="maskParent">
+            <div class="paralaxMask"></div>
+            <div id="fullScreenSliderWrapper">
+                <div id="countdown">
+                    <h1 data-bind="timer: @seconds"></h1>
+                </div>
+                <a href="@Url.Action("Add", "Greetings")" class="homeBtn btn"><i class="icon-down"></i>Поздравить</a>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- global wrapper -->
+<!-- End Document
+================================================== -->

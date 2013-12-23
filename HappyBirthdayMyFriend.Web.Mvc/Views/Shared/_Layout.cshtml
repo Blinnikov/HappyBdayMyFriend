@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>HBNG</title>
+    <meta name="description" content="HBNG">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap  -->
+    <link type="text/css" rel="stylesheet" href="~/Static/css/bootstrap.min.css">
+    <!-- web font  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <!-- plugin css  -->
+    <link rel="stylesheet" type="text/css" href="~/Scripts/js-plugin/animation-framework/animate.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/js-plugin/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/js-plugin/flexslider/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/js-plugin/pageSlide/jquery.pageslide.css" />
+    <!-- Owl carousel-->
+    <link rel="stylesheet" href="~/Scripts/js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="~/Scripts/js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+    <!-- icon fonts -->
+    <link type="text/css" rel="stylesheet" href="~/Static/font-icons/custom-icons/css/custom-icons.css">
+    <link type="text/css" rel="stylesheet" href="~/Static/font-icons/custom-icons/css/custom-icons-ie7.css">
+    <!-- Custom css -->
+    <link type="text/css" rel="stylesheet" href="~/Static/css/layout.css">
+    <link type="text/css" id="colors" rel="stylesheet" href="~/Static/css/sea-green.css">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <script src="~/Scripts/js/modernizr-2.6.1.min.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/js-plugin/respond/respond.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/knockout-3.0.0.js"></script>
+    <!-- third party plugins  -->
+    <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Scripts/js-plugin/easing/jquery.easing.1.3.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+    <script type="text/javascript" src="~/Scripts/js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script type="text/javascript" src="~/Scripts/js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="~/Scripts/js-plugin/parallax/js/jquery.stellar.min.js"></script>
+    <!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
+    <script type="text/javascript" src="~/Scripts/js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+    <script type="text/javascript" src="~/Scripts/js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+    <!-- Custom  -->
+    <script type="text/javascript" src="~/Scripts/js/custom.js"></script>
+    @RenderSection("scripts", false)
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/Static/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/Static/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/Static/images/apple-touch-icon-144x144.png">
+</head>
+<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <img src="~/Static/images/theme-pics/loader.gif" alt="" /><h1 class="noSubtitle">Happy Birthday!</h1>
+        </div>
+    </div>
+    <!-- Preloader -->
+    @RenderBody()
+</body>
+</html>
