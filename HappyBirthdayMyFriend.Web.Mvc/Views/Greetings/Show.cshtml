@@ -4,45 +4,55 @@
 <div id="globalWrapper" class="localscroll">
     <!-- content -->
 
-    <section class="slice" id="contactSlice">
-        <div class="container">
+    <section class="slice" id="cards">
+
+        <div class="container clearfix">
             <div class="row">
-
                 <div class="col-sm-12">
-                    <h1 class="noSubtitle">Создай свою открытку</h1>
+                    <h1>А вот и твои открытки</h1>
+                    <h2 class="subTitle">Прими самые искренние пожелания</h2>
                 </div>
+                <div class="clearfix">
 
-                <div class="col-sm-4">
-                    <div>
-                        <label>Выбери обложку</label>
-                    </div>
-                    <div class="cover">
-                        <img src="~/Static/images/cards/card-001.jpg" />
-                    </div>
+                    @for (int i = 1; i <= 9; i++)
+                    {
+                        <div class="col-sm-4 isotopeItem">
+                            <div class="cardContainer">
+                                <div class="card shadow">
+                                    <div class="front face">
+                                        <img src="~/Static/images/cards/card-00@(i).jpg" />
+                                    </div>
+                                    <div class="back face">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+
                 </div>
-                <form method="post" role="form">
-
-                    <div class="col-sm-4">
-                        <div>
-                            <label>Внутренняя сторона</label>
-                        </div>
-                        <div class="cardOpened">
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="signature">Подпишись</label>
-                            <input class="form-control" name="signature" id="signature" placeholder="Твое имя" title="Не вредничай, подпишись" />
-                        </div>
-                        <div class="form-group">
-                            <label for="comments">Поздравление</label>
-                            <textarea name="comment" class="form-control" id="comments" cols="3" rows="12" placeholder="Текст поздравления…" title="Введи поздравление. Как же без него."></textarea>
-                        </div>
-                        <div class="cardMake">
-                            <button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
-                        </div>
-                    </div>
-                </form>
+                <nav id="filter" class="col-md-12 text-center">
+                    <ul class="pagination">
+                        <li><a class="current" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#">11</a></li>
+                        <li><a href="#">12</a></li>
+                        <li><a href="#">13</a></li>
+                        <li><a href="#">14</a></li>
+                        <li><a href="#">15</a></li>
+                        <li><a href="#">16</a></li>
+                        <li><a href="#">17</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </section>
