@@ -10,7 +10,7 @@ namespace HappyBirthdayMyFriend.Web.Mvc.Controllers
     {
         public int GetSecondsRemain()
         {
-            var bd = new DateTime(2012, 12, 31);
+            var bd = new DateTime(2013, 12, 31);
             var now = DateTime.Now;
             return (int)(bd - now).TotalSeconds;
         }
