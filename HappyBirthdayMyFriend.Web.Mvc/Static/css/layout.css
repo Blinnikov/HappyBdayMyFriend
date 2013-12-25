@@ -763,7 +763,7 @@ margin-bottom:-44px;
 /* PORTFOLIO
 ================================================== */
 nav#filter {margin-bottom:22px;}
-nav#filter li{ display:inline-block;list-style:none;}
+nav#filter li{ display:inline-block;list-style:none; margin-right: 5px;}
 .isotopeItem {margin-bottom: 22px;}
 .isotopeItem .boxContent{margin-top:22px; padding:0;}
 

@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using HappyBdayMyFriend.DataAccess.Contracts;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace HappyBirthdayMyFriend.Web.Mvc.Controllers
 {
     public class HomeController : BaseController
     {
+        public HomeController(IUnitOfWork unitOfWork)
+        {
+            UnitOfWork = unitOfWork;
+        }
+
         public ActionResult Index()
         {
             var seconds = GetSecondsRemain();

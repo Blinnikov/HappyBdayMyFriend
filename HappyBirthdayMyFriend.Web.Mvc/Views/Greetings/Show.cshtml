@@ -1,4 +1,6 @@
-﻿<!-- Primary Page Layout
+﻿@using PagedList.Mvc
+@model PagedList.IPagedList<HappyBdayMyFriend.Model.Card>
+<!-- Primary Page Layout
 ================================================== -->
 <!-- globalWrapper -->
 <div id="globalWrapper" class="localscroll">
@@ -14,49 +16,38 @@
                 </div>
                 <div class="clearfix">
 
-                    @for (int i = 1; i <= 9; i++)
+                    @foreach (var card in Model)
                     {
                         <div class="col-sm-4 isotopeItem">
                             <div class="cardContainer">
                                 <div class="card shadow">
                                     <div class="front face">
-                                        <img src="~/Static/images/cards/card-00@(i).jpg" />
+                                        <img src="~/Static/images/cards/card-@(card.Cover.ToString("D3")).jpg" />
                                     </div>
                                     <div class="back face">
-                                        <p>Извини. меня еще не заполнили :(</p>
+                                        <p>@card.Message</p>
+                                        <p>@card.Signature</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     }
-
-
-
                 </div>
+
                 <nav id="filter" class="col-md-12 text-center">
-                    <ul class="pagination">
-                        <li><a class="current" href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
-                        <li><a href="#">10</a></li>
-                        <li><a href="#">11</a></li>
-                        <li><a href="#">12</a></li>
-                        <li><a href="#">13</a></li>
-                        <li><a href="#">14</a></li>
-                        <li><a href="#">15</a></li>
-                        <li><a href="#">16</a></li>
-                        <li><a href="#">17</a></li>
-                    </ul>
+                    @Html.PagedListPager(Model,
+                        page => Url.Action(ViewContext.RouteData.GetRequiredString("action"), new { page }),
+                        new PagedListRenderOptions
+                                         {
+                                             DisplayLinkToNextPage = PagedListDisplayMode.Never,
+                                             DisplayLinkToPreviousPage = PagedListDisplayMode.Never
+                                         })
                 </nav>
             </div>
         </div>
     </section>
+
+
 
     <!-- content -->
 </div>

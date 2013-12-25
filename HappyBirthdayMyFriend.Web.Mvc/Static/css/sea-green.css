@@ -274,10 +274,12 @@ nav#filter a {
 	background-color: #EEE;
 	color:#555;
 }
-nav#filter a:hover, nav#filter a.current {
+nav#filter a:hover, nav#filter a.current,
+nav#filter li.active a {
 	background-color: #43B6B1;
 	color:#fff;
 }
+
 li.filterTitle {
 	color:#4F6266;
 }

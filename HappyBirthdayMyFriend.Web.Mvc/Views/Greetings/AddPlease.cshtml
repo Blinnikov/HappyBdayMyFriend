@@ -1,0 +1,67 @@
+﻿@model HappyBdayMyFriend.Model.Card
+<!-- Primary Page Layout
+================================================== -->
+<!-- globalWrapper -->
+<div id="globalWrapper" class="localscroll">
+    <!-- content -->
+
+    <section class="slice" id="contactSlice">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h1 class="noSubtitle">Создай свою открытку</h1>
+                </div>
+
+                <div class="col-sm-4">
+                    <div>
+                        <label>Выбери обложку</label>
+                    </div>
+                    <div class="cover">
+                        <img src="~/Static/images/cards/card-001.jpg" />
+                    </div>
+                </div>
+                <form method="post" role="form">
+                    @Html.HiddenFor(m => m.Id)
+                    @Html.HiddenFor(m => m.Cover)
+                    <div class="col-sm-4">
+                        <div>
+                            <label>Внутренняя сторона</label>
+                        </div>
+                        <div class="cardOpened">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Signature, "Подпишись")
+                            @Html.TextBoxFor(m => m.Signature, new
+                            {
+                                @class = "form-control",
+                                placeholder = "Твое имя",
+                                title = "Не вредничай, подпишись"
+                            })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Message, "Поздравление")
+                            @Html.TextAreaFor(m => m.Message, 12, 3, new
+                            {
+                                @class = "form-control",
+                                placeholder = "Текст поздравления…",
+                                title = "Введи поздравление. Как же без него."
+                            })
+                        </div>
+                        <div class="cardMake">
+                            <button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- content -->
+</div>
+<!-- global wrapper -->
+<!-- End Document
+================================================== -->
