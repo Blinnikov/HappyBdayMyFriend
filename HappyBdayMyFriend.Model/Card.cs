@@ -8,7 +8,7 @@ namespace HappyBdayMyFriend.Model
         [Required]
         public int Cover { get; set; }
         [Required]
-        [MaxLength(255)]
+        [MaxLength(450)]
         public string Message { get; set; }
         [Required]
         [MaxLength(100)]

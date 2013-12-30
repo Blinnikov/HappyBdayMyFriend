@@ -29,12 +29,12 @@ namespace HappyBirthdayMyFriend.Web.Mvc.Controllers
         {
             return ShowCards(page);
         }
-
+         
         [NonAction]
         private ActionResult ShowCards(int? page)
         {
             int pageNumber = (page ?? 1);
-            return View("Show", UnitOfWork.Cards.GetAll().OrderBy(c => c.Cover).ToPagedList(pageNumber, PageSize));
+            return View("Show", UnitOfWork.Cards.GetAll().OrderBy(c => c.Id).ToPagedList(pageNumber, PageSize));
         }
 
         public ActionResult AddPlease()

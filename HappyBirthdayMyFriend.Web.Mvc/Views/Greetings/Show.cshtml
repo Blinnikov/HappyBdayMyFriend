@@ -25,8 +25,10 @@
                                         <img src="~/Static/images/cards/card-@(card.Cover.ToString("D3")).jpg" />
                                     </div>
                                     <div class="back face">
-                                        <p>@card.Message</p>
-                                        <p>@card.Signature</p>
+                                        <p>@Html.Raw(card.Message)</p>
+                                        <p>
+                                            <strong>@card.Signature</strong>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -40,7 +42,8 @@
                         new PagedListRenderOptions
                                          {
                                              DisplayLinkToNextPage = PagedListDisplayMode.Never,
-                                             DisplayLinkToPreviousPage = PagedListDisplayMode.Never
+                                             DisplayLinkToPreviousPage = PagedListDisplayMode.Never,
+                                             MaximumPageNumbersToDisplay = 30
                                          })
                 </nav>
             </div>

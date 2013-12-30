@@ -9,8 +9,8 @@ namespace HappyBirthdayMyFriend.Web.Mvc.Controllers
         protected IUnitOfWork UnitOfWork { get; set; }
         public int GetSecondsRemain()
         {
-            var bd = new DateTime(2013, 12, 31);
-            var now = DateTime.Now;
+            var bd = new DateTime(2013, 12, 31, 6, 35, 0, DateTimeKind.Utc);
+            var now = DateTime.UtcNow;
             return (int)(bd - now).TotalSeconds;
         }
 	}
